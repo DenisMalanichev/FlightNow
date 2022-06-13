@@ -1,0 +1,13 @@
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\bin\Debug\Oblik_polotiv.exe.config
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\bin\Debug\Oblik_polotiv.exe
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\bin\Debug\Oblik_polotiv.pdb
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\obj\Debug\Oblik_polotiv.csproj.AssemblyReference.cache
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\obj\Debug\Oblik_polotiv.csproj.SuggestedBindingRedirects.cache
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\obj\Debug\Oblik_polotiv.Form1.resources
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\obj\Debug\Oblik_polotiv.Properties.Resources.resources
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\obj\Debug\Oblik_polotiv.csproj.GenerateResource.cache
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\obj\Debug\Oblik_polotiv.csproj.CoreCompileInputs.cache
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\obj\Debug\Oblik_polotiv.exe
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\obj\Debug\Oblik_polotiv.pdb
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\obj\Debug\Oblik_polotiv.frmSearchResults.resources
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\obj\Debug\Oblik_polotiv.frmFlightDetails.resources
