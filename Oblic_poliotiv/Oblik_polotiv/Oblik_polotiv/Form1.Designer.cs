@@ -316,7 +316,6 @@
         #endregion
 
         private System.Windows.Forms.Label MainLable;
-        private System.Windows.Forms.ComboBox SearchFilter;
         private System.Windows.Forms.Label SortByLable;
         private System.Windows.Forms.Label FromLable;
         private System.Windows.Forms.Label ToLable;
@@ -325,7 +324,6 @@
         private System.Windows.Forms.Label DepartLable;
         private System.Windows.Forms.Label ReturnLable;
         private System.Windows.Forms.Label ClassLable;
-        private System.Windows.Forms.ComboBox ClassBox;
         private System.Windows.Forms.Panel FlisghtSettingsPannel;
         private System.Windows.Forms.MaskedTextBox ReturnBox;
         private System.Windows.Forms.MaskedTextBox DepartBox;
@@ -339,6 +337,8 @@
         private System.Windows.Forms.Button btnfSearchResBack;
         private System.Windows.Forms.Label label2;
         private frmSearchResults frmSearchResults;
+        public System.Windows.Forms.ComboBox SearchFilter;
+        public System.Windows.Forms.ComboBox ClassBox;
     }
 }
 

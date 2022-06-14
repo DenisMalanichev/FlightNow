@@ -17,9 +17,10 @@ namespace Oblik_polotiv
         public string carrier { get; }
         public string cls { get; }
         public int from_Price { get; }
+        public List<String> pilots { get; }
 
         public Flight(string f_Country, string f_City, string f_Airport, string t_Country, string t_City, 
-            string t_Airport, DateTime dep, DateTime arr, string carr, string cla, int f_Price)
+            string t_Airport, DateTime dep, DateTime arr, string carr, string cla, int f_Price, List<String> pilots)
         {
             from_Country = f_Country;
             from_City = f_City;
@@ -33,6 +34,7 @@ namespace Oblik_polotiv
             id = form_ID();
             cls = cla;
             from_Price = f_Price;
+            this.pilots = pilots;
         }
 
         public override string ToString()

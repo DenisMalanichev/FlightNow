@@ -32,10 +32,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lstBoxSearchResults = new System.Windows.Forms.ListBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.btnSaveFlights = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.lblSearchResults = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.frmFlightDetails = new Oblik_polotiv.frmFlightDetails();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -81,6 +81,17 @@
             this.panel2.Size = new System.Drawing.Size(819, 36);
             this.panel2.TabIndex = 1;
             // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.White;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(130, 8);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(99, 22);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "FlightNow";
+            // 
             // btnSaveFlights
             // 
             this.btnSaveFlights.Location = new System.Drawing.Point(704, 103);
@@ -105,17 +116,6 @@
             this.lblSearchResults.TabIndex = 2;
             this.lblSearchResults.Text = "We have found this flights:";
             // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.White;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(130, 8);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(99, 22);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "FlightNow";
-            // 
             // frmFlightDetails
             // 
             this.frmFlightDetails.BackColor = System.Drawing.Color.White;
@@ -128,7 +128,6 @@
             this.frmFlightDetails.Size = new System.Drawing.Size(819, 444);
             this.frmFlightDetails.TabIndex = 3;
             this.frmFlightDetails.Visible = false;
-            // 
             // frmSearchResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

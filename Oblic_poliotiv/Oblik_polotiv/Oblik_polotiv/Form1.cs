@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
 
@@ -13,13 +7,13 @@ namespace Oblik_polotiv
 {
     public partial class Form1 : Form
     {
-        static List<string> searched = new List<string>();
+        static List<Flight> searched = new List<Flight>();
         BindingSource searchedBindingSource = new BindingSource();
         public Form1()
         {
             InitializeComponent();
 
-            this.Text = "FlightNow";
+            Text = "FlightNow";
 
             SearchFilter.Items.Add("Country");
             SearchFilter.Items.Add("City");
@@ -37,15 +31,16 @@ namespace Oblik_polotiv
             ClassBox.DropDownStyle = ComboBoxStyle.DropDownList;
             ClassBox.Text = ClassBox.Items[0].ToString();
 
-            DepartBox.Text = DateTime.Now.ToString("MM/dd/yyyy");
-
-            ReturnBox.Text = DateTime.Now.AddDays(1).ToString("MM/dd/yyyy");
+            //DepartBox.Text = DateTime.Now.ToString("MM/dd/yyyy");
+            DepartBox.Text = "10.11.2022";
+            //ReturnBox.Text = DateTime.Now.AddDays(1).ToString("MM/dd/yyyy");
+            ReturnBox.Text = "11.11.2022";
 
         }
 
-        internal void receiveSearched(string text)
+        internal void receiveSearched(Flight flight)
         {
-            searched.Insert(0, text);
+            searched.Insert(0, flight);
         }       
 
         private void SearchFilter_SelectedIndexChanged(object sender, EventArgs e)
@@ -117,19 +112,23 @@ namespace Oblik_polotiv
             Flight fl_Kyiv_Lviv = new Flight("Ukraine", "Kyiv", "Boryspil International Airport", "Ukraine",
                 "Lviv", "Lviv Danylo Halytskyi International Airport", 
                 DateTime.Parse("10/11/2022 12:00", CultureInfo.InvariantCulture), 
-                DateTime.Parse("11/11/2022 13:30", CultureInfo.InvariantCulture), "UkrAir", ClassBox.Text, 200);
+                DateTime.Parse("11/11/2022 13:30", CultureInfo.InvariantCulture), "UkrAir", ClassBox.Text, 200, 
+                new List<string>() { "Vasilenko D.A.", "Andrienko V.V." });
             Flight fl_Kyiv_Odesa = new Flight("Ukraine", "Kyiv", "Boryspil International Airport", "Ukraine",
                 "Odesa", "Odesa International Airport", 
                 DateTime.Parse("12/10/2022 5:50", CultureInfo.InvariantCulture), 
-                DateTime.Parse("12/10/2022 6:55", CultureInfo.InvariantCulture), "UkrAir", ClassBox.Text, 120);
+                DateTime.Parse("12/10/2022 6:55", CultureInfo.InvariantCulture), "UkrAir", ClassBox.Text, 120,
+                new List<string>() { "Shevchenko S.A", "Mazur V.O." });
             Flight fl_London_Kyiv = new Flight("United Kingdom", "London", "London City Airport", "Ukraine",
                "Kyiv", "Boryspil International Airport", 
                DateTime.Parse("12/10/2022 0:10", CultureInfo.InvariantCulture), 
-               DateTime.Parse("12/10/2022 2:45", CultureInfo.InvariantCulture), "British Trans", ClassBox.Text, 345);
+               DateTime.Parse("12/10/2022 2:45", CultureInfo.InvariantCulture), "British Trans", ClassBox.Text, 345,
+               new List<string>() { "Schevcov O.K.", "Melnik S.D." });
             Flight fl_Lviv_Warsaw = new Flight("Ukraine", "Lviv", "Lviv Danylo Halytskyi International Airport", 
                "Poland", "Warsaw", "Warsaw Chopin Airport",
                DateTime.Parse("12/10/2022 0:10", CultureInfo.InvariantCulture),
-               DateTime.Parse("12/10/2022 2:45", CultureInfo.InvariantCulture), "Polskie Linie Lotnicze", ClassBox.Text, 409);
+               DateTime.Parse("12/10/2022 2:45", CultureInfo.InvariantCulture), "Polskie Linie Lotnicze", ClassBox.Text, 409,
+               new List<string>() { "Guba U.U.", "Ilkov Y. I." });
             res.Add(fl_Kyiv_Lviv);
             res.Add(fl_Kyiv_Odesa);
             res.Add(fl_London_Kyiv);
@@ -173,8 +172,16 @@ namespace Oblik_polotiv
         
         private void ResentlyWatchedLst_DoubleClick(object sender, EventArgs e)
         {
+            
             if(ResentlyWatchedLst.SelectedItems.Count > 0)
-                MessageBox.Show(ResentlyWatchedLst.SelectedItems[0].ToString());
+            {
+                frmSearchResults.frmFlightDetails.Visible = true;
+                frmSearchResults.frmFlightDetails.flight = (Flight)ResentlyWatchedLst.SelectedItems[0];
+                frmSearchResults.frmFlightDetails.EnterData();
+                frmSearchResults.Visible = true;
+                btnfSearchResBack.Visible = true;
+            }
+                
         }
         private void btnfSearchResBack_Click(object sender, EventArgs e)
         {

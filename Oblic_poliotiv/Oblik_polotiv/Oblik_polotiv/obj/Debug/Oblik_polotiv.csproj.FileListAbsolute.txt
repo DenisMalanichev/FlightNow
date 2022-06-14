@@ -11,3 +11,8 @@ D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\obj\Debug\Oblik_polotiv.ex
 D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\obj\Debug\Oblik_polotiv.pdb
 D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\obj\Debug\Oblik_polotiv.frmSearchResults.resources
 D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\obj\Debug\Oblik_polotiv.frmFlightDetails.resources
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\bin\Debug\zxing.dll
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\bin\Debug\zxing.presentation.dll
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\bin\Debug\zxing.xml
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\bin\Debug\zxing.presentation.xml
+D:\cursova\Oblic_poliotiv\Oblik_polotiv\Oblik_polotiv\obj\Debug\Oblik_polotiv.csproj.CopyComplete

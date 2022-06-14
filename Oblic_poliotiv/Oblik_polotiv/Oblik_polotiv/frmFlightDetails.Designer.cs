@@ -40,8 +40,14 @@
             this.lblDepart = new System.Windows.Forms.Label();
             this.lblArrive = new System.Windows.Forms.Label();
             this.lblFliTime = new System.Windows.Forms.Label();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.lblPilots = new System.Windows.Forms.Label();
+            this.lstBoxPilots = new System.Windows.Forms.ListBox();
+            this.picBoxQR = new System.Windows.Forms.PictureBox();
+            this.lblID = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxPath)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxQR)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -82,48 +88,50 @@
             // 
             // btnSaveFlight
             // 
-            this.btnSaveFlight.Location = new System.Drawing.Point(703, 375);
+            this.btnSaveFlight.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSaveFlight.Location = new System.Drawing.Point(711, 396);
             this.btnSaveFlight.Name = "btnSaveFlight";
             this.btnSaveFlight.Size = new System.Drawing.Size(75, 40);
             this.btnSaveFlight.TabIndex = 1;
             this.btnSaveFlight.Text = "Save flight info";
-            this.btnSaveFlight.UseVisualStyleBackColor = true;
+            this.btnSaveFlight.UseVisualStyleBackColor = false;
+            this.btnSaveFlight.Click += new System.EventHandler(this.btnSaveFlight_Click);
             // 
             // lblCarrier
             // 
             this.lblCarrier.AutoSize = true;
-            this.lblCarrier.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCarrier.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCarrier.Location = new System.Drawing.Point(12, 73);
             this.lblCarrier.Name = "lblCarrier";
-            this.lblCarrier.Size = new System.Drawing.Size(58, 17);
+            this.lblCarrier.Size = new System.Drawing.Size(60, 18);
             this.lblCarrier.TabIndex = 2;
             this.lblCarrier.Text = "Carrier";
             // 
             // lblRoute
             // 
             this.lblRoute.AutoSize = true;
-            this.lblRoute.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoute.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRoute.Location = new System.Drawing.Point(12, 108);
             this.lblRoute.Name = "lblRoute";
-            this.lblRoute.Size = new System.Drawing.Size(51, 17);
+            this.lblRoute.Size = new System.Drawing.Size(53, 18);
             this.lblRoute.TabIndex = 3;
             this.lblRoute.Text = "Route";
             // 
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblPrice.Location = new System.Drawing.Point(12, 375);
+            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.ForeColor = System.Drawing.Color.Orange;
+            this.lblPrice.Location = new System.Drawing.Point(10, 410);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(71, 24);
+            this.lblPrice.Size = new System.Drawing.Size(88, 29);
             this.lblPrice.TabIndex = 4;
-            this.lblPrice.Text = "From: ";
+            this.lblPrice.Text = "Price: ";
             // 
             // picBoxPath
             // 
             this.picBoxPath.Image = ((System.Drawing.Image)(resources.GetObject("picBoxPath.Image")));
-            this.picBoxPath.Location = new System.Drawing.Point(461, 202);
+            this.picBoxPath.Location = new System.Drawing.Point(264, 227);
             this.picBoxPath.Name = "picBoxPath";
             this.picBoxPath.Size = new System.Drawing.Size(317, 50);
             this.picBoxPath.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -133,41 +141,85 @@
             // lblDepart
             // 
             this.lblDepart.AutoSize = true;
-            this.lblDepart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDepart.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDepart.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblDepart.Location = new System.Drawing.Point(458, 255);
+            this.lblDepart.Location = new System.Drawing.Point(261, 280);
             this.lblDepart.Name = "lblDepart";
-            this.lblDepart.Size = new System.Drawing.Size(57, 17);
+            this.lblDepart.Size = new System.Drawing.Size(71, 24);
             this.lblDepart.TabIndex = 6;
             this.lblDepart.Text = "Depart";
             // 
             // lblArrive
             // 
             this.lblArrive.AutoSize = true;
-            this.lblArrive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArrive.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArrive.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblArrive.Location = new System.Drawing.Point(727, 255);
+            this.lblArrive.Location = new System.Drawing.Point(530, 280);
             this.lblArrive.Name = "lblArrive";
-            this.lblArrive.Size = new System.Drawing.Size(51, 17);
+            this.lblArrive.Size = new System.Drawing.Size(65, 24);
             this.lblArrive.TabIndex = 7;
             this.lblArrive.Text = "Arrive";
             // 
             // lblFliTime
             // 
             this.lblFliTime.AutoSize = true;
-            this.lblFliTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFliTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFliTime.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblFliTime.Location = new System.Drawing.Point(586, 182);
+            this.lblFliTime.Location = new System.Drawing.Point(389, 207);
             this.lblFliTime.Name = "lblFliTime";
-            this.lblFliTime.Size = new System.Drawing.Size(64, 17);
+            this.lblFliTime.Size = new System.Drawing.Size(85, 24);
             this.lblFliTime.TabIndex = 8;
             this.lblFliTime.Text = "FlyTime";
+            // 
+            // saveFileDialog
+            // 
+            this.saveFileDialog.Filter = "(*.txt)|*.txt";
+            // 
+            // lblPilots
+            // 
+            this.lblPilots.AutoSize = true;
+            this.lblPilots.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPilots.Location = new System.Drawing.Point(12, 197);
+            this.lblPilots.Name = "lblPilots";
+            this.lblPilots.Size = new System.Drawing.Size(56, 18);
+            this.lblPilots.TabIndex = 9;
+            this.lblPilots.Text = "Pilots:";
+            // 
+            // lstBoxPilots
+            // 
+            this.lstBoxPilots.FormattingEnabled = true;
+            this.lstBoxPilots.Location = new System.Drawing.Point(15, 227);
+            this.lstBoxPilots.Name = "lstBoxPilots";
+            this.lstBoxPilots.Size = new System.Drawing.Size(171, 121);
+            this.lstBoxPilots.TabIndex = 10;
+            // 
+            // picBoxQR
+            // 
+            this.picBoxQR.Location = new System.Drawing.Point(585, 351);
+            this.picBoxQR.Name = "picBoxQR";
+            this.picBoxQR.Size = new System.Drawing.Size(120, 120);
+            this.picBoxQR.TabIndex = 11;
+            this.picBoxQR.TabStop = false;
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.Location = new System.Drawing.Point(15, 156);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(83, 18);
+            this.lblID.TabIndex = 12;
+            this.lblID.Text = "ID 000000";
             // 
             // frmFlightDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.lblID);
+            this.Controls.Add(this.picBoxQR);
+            this.Controls.Add(this.lstBoxPilots);
+            this.Controls.Add(this.lblPilots);
             this.Controls.Add(this.lblFliTime);
             this.Controls.Add(this.lblArrive);
             this.Controls.Add(this.lblDepart);
@@ -184,6 +236,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxPath)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxQR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,5 +255,10 @@
         private System.Windows.Forms.Label lblDepart;
         private System.Windows.Forms.Label lblArrive;
         private System.Windows.Forms.Label lblFliTime;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private System.Windows.Forms.Label lblPilots;
+        public System.Windows.Forms.ListBox lstBoxPilots;
+        private System.Windows.Forms.PictureBox picBoxQR;
+        private System.Windows.Forms.Label lblID;
     }
 }
