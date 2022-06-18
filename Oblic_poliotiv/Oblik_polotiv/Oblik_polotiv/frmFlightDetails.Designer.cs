@@ -89,7 +89,7 @@
             // btnSaveFlight
             // 
             this.btnSaveFlight.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSaveFlight.Location = new System.Drawing.Point(711, 396);
+            this.btnSaveFlight.Location = new System.Drawing.Point(711, 401);
             this.btnSaveFlight.Name = "btnSaveFlight";
             this.btnSaveFlight.Size = new System.Drawing.Size(75, 40);
             this.btnSaveFlight.TabIndex = 1;

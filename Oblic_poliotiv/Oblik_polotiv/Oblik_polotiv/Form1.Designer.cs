@@ -37,7 +37,6 @@
             this.FromBox = new System.Windows.Forms.TextBox();
             this.ToBox = new System.Windows.Forms.TextBox();
             this.DepartLable = new System.Windows.Forms.Label();
-            this.ReturnLable = new System.Windows.Forms.Label();
             this.ClassLable = new System.Windows.Forms.Label();
             this.ClassBox = new System.Windows.Forms.ComboBox();
             this.FlisghtSettingsPannel = new System.Windows.Forms.Panel();
@@ -45,7 +44,6 @@
             this.ResentlyWatchedLst = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SearchFlightsBtn = new System.Windows.Forms.Button();
-            this.ReturnBox = new System.Windows.Forms.MaskedTextBox();
             this.DepartBox = new System.Windows.Forms.MaskedTextBox();
             this.FromBoxErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.ToBoxErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
@@ -139,16 +137,6 @@
             this.DepartLable.TabIndex = 7;
             this.DepartLable.Text = "Depart:";
             // 
-            // ReturnLable
-            // 
-            this.ReturnLable.AutoSize = true;
-            this.ReturnLable.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReturnLable.Location = new System.Drawing.Point(466, 13);
-            this.ReturnLable.Name = "ReturnLable";
-            this.ReturnLable.Size = new System.Drawing.Size(108, 23);
-            this.ReturnLable.TabIndex = 8;
-            this.ReturnLable.Text = "Return:";
-            // 
             // ClassLable
             // 
             this.ClassLable.AutoSize = true;
@@ -176,11 +164,9 @@
             this.FlisghtSettingsPannel.Controls.Add(this.ResentlyWatchedLst);
             this.FlisghtSettingsPannel.Controls.Add(this.label1);
             this.FlisghtSettingsPannel.Controls.Add(this.SearchFlightsBtn);
-            this.FlisghtSettingsPannel.Controls.Add(this.ReturnBox);
             this.FlisghtSettingsPannel.Controls.Add(this.DepartBox);
             this.FlisghtSettingsPannel.Controls.Add(this.ClassBox);
             this.FlisghtSettingsPannel.Controls.Add(this.ClassLable);
-            this.FlisghtSettingsPannel.Controls.Add(this.ReturnLable);
             this.FlisghtSettingsPannel.Controls.Add(this.DepartLable);
             this.FlisghtSettingsPannel.Controls.Add(this.ToBox);
             this.FlisghtSettingsPannel.Controls.Add(this.FromBox);
@@ -229,14 +215,6 @@
             this.SearchFlightsBtn.Text = "Search flights →";
             this.SearchFlightsBtn.UseVisualStyleBackColor = true;
             this.SearchFlightsBtn.Click += new System.EventHandler(this.SearchFlightsBtn_Click);
-            // 
-            // ReturnBox
-            // 
-            this.ReturnBox.Location = new System.Drawing.Point(470, 58);
-            this.ReturnBox.Mask = "00.00.0000";
-            this.ReturnBox.Name = "ReturnBox";
-            this.ReturnBox.Size = new System.Drawing.Size(100, 20);
-            this.ReturnBox.TabIndex = 15;
             // 
             // DepartBox
             // 
@@ -322,10 +300,8 @@
         private System.Windows.Forms.TextBox FromBox;
         private System.Windows.Forms.TextBox ToBox;
         private System.Windows.Forms.Label DepartLable;
-        private System.Windows.Forms.Label ReturnLable;
         private System.Windows.Forms.Label ClassLable;
         private System.Windows.Forms.Panel FlisghtSettingsPannel;
-        private System.Windows.Forms.MaskedTextBox ReturnBox;
         private System.Windows.Forms.MaskedTextBox DepartBox;
         private System.Windows.Forms.Button SearchFlightsBtn;
         private System.Windows.Forms.Label label1;

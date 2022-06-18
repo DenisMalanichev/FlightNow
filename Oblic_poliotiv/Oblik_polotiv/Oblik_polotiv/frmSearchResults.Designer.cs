@@ -128,6 +128,7 @@
             this.frmFlightDetails.Size = new System.Drawing.Size(819, 444);
             this.frmFlightDetails.TabIndex = 3;
             this.frmFlightDetails.Visible = false;
+            // 
             // frmSearchResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
