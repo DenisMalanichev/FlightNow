@@ -45,6 +45,7 @@
             this.lstBoxPilots = new System.Windows.Forms.ListBox();
             this.picBoxQR = new System.Windows.Forms.PictureBox();
             this.lblID = new System.Windows.Forms.Label();
+            this.btnReturnFlight = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxPath)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQR)).BeginInit();
@@ -211,11 +212,22 @@
             this.lblID.TabIndex = 12;
             this.lblID.Text = "ID 000000";
             // 
+            // btnReturnFlight
+            // 
+            this.btnReturnFlight.Location = new System.Drawing.Point(711, 361);
+            this.btnReturnFlight.Name = "btnReturnFlight";
+            this.btnReturnFlight.Size = new System.Drawing.Size(75, 34);
+            this.btnReturnFlight.TabIndex = 13;
+            this.btnReturnFlight.Text = "Return flight";
+            this.btnReturnFlight.UseVisualStyleBackColor = true;
+            this.btnReturnFlight.Click += new System.EventHandler(this.btnReturnFlight_Click);
+            // 
             // frmFlightDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnReturnFlight);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.picBoxQR);
             this.Controls.Add(this.lstBoxPilots);
@@ -260,5 +272,6 @@
         public System.Windows.Forms.ListBox lstBoxPilots;
         private System.Windows.Forms.PictureBox picBoxQR;
         private System.Windows.Forms.Label lblID;
+        public System.Windows.Forms.Button btnReturnFlight;
     }
 }

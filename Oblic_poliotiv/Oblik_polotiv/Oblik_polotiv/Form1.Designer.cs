@@ -297,13 +297,9 @@
         private System.Windows.Forms.Label SortByLable;
         private System.Windows.Forms.Label FromLable;
         private System.Windows.Forms.Label ToLable;
-        private System.Windows.Forms.TextBox FromBox;
-        private System.Windows.Forms.TextBox ToBox;
         private System.Windows.Forms.Label DepartLable;
         private System.Windows.Forms.Label ClassLable;
         private System.Windows.Forms.Panel FlisghtSettingsPannel;
-        private System.Windows.Forms.MaskedTextBox DepartBox;
-        private System.Windows.Forms.Button SearchFlightsBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ErrorProvider FromBoxErrorProvider;
         private System.Windows.Forms.ErrorProvider ToBoxErrorProvider;
@@ -312,9 +308,13 @@
         public System.Windows.Forms.ListBox ResentlyWatchedLst;
         private System.Windows.Forms.Button btnfSearchResBack;
         private System.Windows.Forms.Label label2;
-        private frmSearchResults frmSearchResults;
         public System.Windows.Forms.ComboBox SearchFilter;
         public System.Windows.Forms.ComboBox ClassBox;
+        public System.Windows.Forms.TextBox FromBox;
+        public System.Windows.Forms.TextBox ToBox;
+        public System.Windows.Forms.MaskedTextBox DepartBox;
+        public System.Windows.Forms.Button SearchFlightsBtn;
+        public frmSearchResults frmSearchResults;
     }
 }
 
