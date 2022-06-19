@@ -58,11 +58,12 @@ namespace Oblik_polotiv
         private void btnReturnFlight_Click(object sender, EventArgs e)
         {
             Form1 frmReturn = new Form1();
+            frmReturn.SearchFilter.SelectedIndex = 1;
             frmReturn.FromBox.Text = flight.direction.GetBackDirection().from_City;
             frmReturn.ToBox.Text = flight.direction.GetBackDirection().to_City;
-            frmReturn.DepartBox.Text = flight.arrive.ToString();
-            frmReturn.SearchFilter.SelectedIndex = 1;
+            frmReturn.DepartBox.Text = flight.arrive.ToString();            
             frmReturn.frmSearchResults.frmFlightDetails.btnReturnFlight.Hide();
+            MessageBox.Show(flight.direction.GetBackDirection().from_City, flight.direction.GetBackDirection().to_City);
             frmReturn.ShowDialog();
         }
     }
