@@ -55,6 +55,7 @@
     <Compile Include="City.cs" />
     <Compile Include="Direction.cs" />
     <Compile Include="Flight.cs" />
+    <Compile Include="FlightsReader.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -99,55 +99,8 @@ namespace Oblik_polotiv
         }
         public List<Flight> Search()
         {
-            List<Flight> res = new List<Flight>();
-            Flight fl_Kyiv_Lviv = new Flight(new Direction("Ukraine", "Kyiv", "Boryspil International Airport", "Ukraine",
-                "Lviv", "Lviv Danylo Halytskyi International Airport"),
-                DateTime.Parse("10/11/2022 12:00", CultureInfo.InvariantCulture),
-                DateTime.Parse("11/11/2022 13:30", CultureInfo.InvariantCulture), "UkrAir", ClassBox.Text, 200,
-                new List<Pilot>() { new Pilot("Vasilenko D.A.", 120), new Pilot("Andrienko V.V.", 50) });
-            Flight fl_Kyiv_Odesa = new Flight(new Direction("Ukraine", "Kyiv", "Boryspil International Airport", "Ukraine",
-                "Odesa", "Odesa International Airport"),
-                DateTime.Parse("12/10/2022 5:50", CultureInfo.InvariantCulture),
-                DateTime.Parse("12/10/2022 6:55", CultureInfo.InvariantCulture), "UkrAir", ClassBox.Text, 120,
-                new List<Pilot>() { new Pilot("Shevchenko S.A", 700), new Pilot("Mazur V.O.", 300) });
-            Flight fl_London_Kyiv = new Flight(new Direction("United Kingdom", "London", "London City Airport", "Ukraine",
-               "Kyiv", "Boryspil International Airport"),
-               DateTime.Parse("12/10/2022 0:10", CultureInfo.InvariantCulture),
-               DateTime.Parse("12/10/2022 2:45", CultureInfo.InvariantCulture), "British Trans", ClassBox.Text, 345,
-               new List<Pilot>() { new Pilot("Schevcov O.K.", 1500), new Pilot("Melnik S.D.", 610) });
-            Flight fl_Lviv_Warsaw = new Flight(new Direction("Ukraine", "Lviv", "Lviv Danylo Halytskyi International Airport",
-               "Poland", "Warsaw", "Warsaw Chopin Airport"),
-               DateTime.Parse("12/10/2022 0:10", CultureInfo.InvariantCulture),
-               DateTime.Parse("12/10/2022 2:45", CultureInfo.InvariantCulture), "Polskie Linie Lotnicze", ClassBox.Text, 409,
-               new List<Pilot>() { new Pilot("Guba U.U.", 1100), new Pilot("Ilkov Y. I.", 980) });
-            Flight fl_Warsaw_Lviv = new Flight(new Direction("Poland", "Warsaw", "Warsaw Chopin Airport","Ukraine", 
-                "Lviv", "Lviv Danylo Halytskyi International Airport"),
-               DateTime.Parse("12/10/2022 0:10", CultureInfo.InvariantCulture),
-               DateTime.Parse("12/11/2022 2:45", CultureInfo.InvariantCulture), "Polskie Linie Lotnicze", ClassBox.Text, 409,
-               new List<Pilot>() { new Pilot("Guba U.U.", 1100), new Pilot("Ilkov Y. I.", 980) });
-            Flight fl_Odesa_Warsaw = new Flight(new Direction("Ukraine", "Odesa", "Odesa International Airport",
-               "Poland", "Warsaw", "Warsaw Chopin Airport"),
-               DateTime.Parse("10/11/2022 0:15", CultureInfo.InvariantCulture),
-               DateTime.Parse("12/10/2022 2:45", CultureInfo.InvariantCulture), "Polskie Linie Lotnicze", ClassBox.Text, 480,
-               new List<Pilot>() { new Pilot("Guba U.U.", 660), new Pilot("Ilkov Y. I.", 812) });
-            Flight fl_Kyiv_Wroclaw = new Flight(new Direction("Ukraine", "Kyiv", "Boryspil International Airport",
-               "Poland", "Wroclaw", "Wroclaw Nicolaus Copernicus Airport"),
-               DateTime.Parse("11/12/2022 7:15", CultureInfo.InvariantCulture),
-               DateTime.Parse("12/10/2022 9:45", CultureInfo.InvariantCulture), "Polskie Linie Lotnicze", ClassBox.Text, 300,
-               new List<Pilot>() { new Pilot("Guba U.U.", 3420), new Pilot("Ilkov Y. I.", 811) });
-            Flight fl_Warsaw_Odesa = new Flight(new Direction("Poland", "Warsaw", "Warsaw Chopin Airport",
-               "Ukraine", "Odesa", "Odesa International Airport"),
-               DateTime.Parse("12/11/2022 0:55", CultureInfo.InvariantCulture),
-               DateTime.Parse("12/11/2022 2:45", CultureInfo.InvariantCulture), "Polskie Linie Lotnicze", ClassBox.Text, 480,
-               new List<Pilot>() { new Pilot("Guba U.U.", 1250), new Pilot("Ilkov Y. I.", 1020) });
-            res.Add(fl_Kyiv_Odesa);
-            res.Add(fl_Kyiv_Lviv);            
-            res.Add(fl_London_Kyiv);
-            res.Add(fl_Lviv_Warsaw);
-            res.Add(fl_Odesa_Warsaw);
-            res.Add(fl_Kyiv_Wroclaw);
-            res.Add(fl_Warsaw_Odesa);
-            res.Add(fl_Warsaw_Lviv);
+            FlightsReader flightsReader = new FlightsReader(ClassBox.Text);
+            List<Flight> res = flightsReader.flights;            
             for(int i = 0; i < res.Count; i++)
             {
                 Flight fl = res[i];

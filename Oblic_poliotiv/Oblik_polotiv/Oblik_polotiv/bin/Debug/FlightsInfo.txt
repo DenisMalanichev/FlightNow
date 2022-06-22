@@ -1,0 +1,119 @@
+Ukraine
+Kyiv
+Boryspil International Airport
+Ukraine
+Lviv
+Lviv Danylo Halytskyi International Airport
+10/11/2022 12:00
+11/11/2022 13:30
+UkrAir
+200
+Vasilenko D.A.
+120
+Andrienko V.V.
+50
+
+Ukraine
+Kyiv
+Boryspil International Airport
+Ukraine
+Odesa
+Odesa International Airport
+12/10/2022 5:50
+12/10/2022 6:55
+UkrAir
+120
+Shevchenko S.A.
+700
+Mazur V.O.
+300
+
+United Kingdom
+London
+London City Airport
+Ukraine
+Kyiv
+Boryspil International Airport
+12/10/2022 0:10
+12/10/2022 2:45
+British Trans
+345
+Schevcov O.K.
+1500
+Melnik S.D.
+610
+
+Ukraine
+Lviv
+Lviv Danylo Halytskyi International Airport
+Poland
+Warsaw
+Warsaw Chopin Airport
+12/10/2022 0:10
+12/10/2022 2:45
+Polskie Linie Lotnicze
+409
+Guba U.U.
+1100
+Ilkov Y.I.
+980
+
+Poland
+Warsaw
+Warsaw Chopin Airport
+Ukraine
+Lviv
+Lviv Danylo Halytskyi International Airport
+12/10/2022 0:10
+12/11/2022 2:45
+Polskie Linie Lotnicze
+409
+Guba U.U.
+1100
+Ilkov Y.I.
+980
+
+Ukraine
+Odesa
+Odesa Interanational Airport
+Poland
+Warsaw
+Wasaw Chopin Airport
+10/11/2022 0:15
+12/10/2022 2:45
+Polskie Linie Lotnicze
+480
+Guba U.U.
+1100
+Ilkov Y.I.
+980
+
+Ukraine
+Kyiv
+Boryspil International Airport
+Poland
+Wroclaw
+Wroclaw Nicolaus Copernicus Airport
+11/12/2022 7:15
+12/10/2022 9:45
+Polskie Linie Lotnicze
+300
+Guba U.U.
+1100
+Ilkov Y.I.
+980
+
+Poland
+Warsaw
+Warsaw Chopin Airport
+Ukraine
+Odesa
+Odesa International Airport
+12/11/2022 0:55
+12/11/2022 2:45
+Polskie Linie Lotnicze
+480
+Guba U.U.
+1100
+Ilkov Y.I.
+980

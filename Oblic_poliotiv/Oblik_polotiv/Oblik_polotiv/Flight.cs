@@ -39,7 +39,6 @@ namespace Oblik_polotiv
                 identificator += ch*ch;
             
             return (identificator % 1000000000);
-
         }
     }   
       
